@@ -6,7 +6,7 @@ metadata:
   labels:
     env: pre-prod
 spec:
-  replicas: 4
+  replicas: 6
   selector:
     matchLabels:
       app: myapp
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name : myapplication
-          image: httpd
+          image: nginx
           ports:
             - containerPort: 80
